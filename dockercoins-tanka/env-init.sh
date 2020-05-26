@@ -1,10 +1,10 @@
 #!/bin/bash -x
 
-#echo "Waiting to complete"; while [ ! -f /opt/.backgroundfinished ] ; do sleep 2; done; echo "Done"
+echo "export PATH=\$PATH:\$HOME/go/bin" >> "$HOME/.bashrc"
 
-echo "Installing packages"
-echo "Sponge"
-apt-get install -y moreutils gettext
+source "$HOME/.bashrc"
+
+#echo "Waiting to complete"; while [ ! -f /opt/.backgroundfinished ] ; do sleep 2; done; echo "Done"
 
 echo "tasks"
 curl -sL https://taskfile.dev/install.sh -o install.sh
@@ -17,6 +17,7 @@ chmod a+rx "$HOME/go/bin/tk"
 echo "jsonnet"
 pip install jsonnet
 
-echo "export PATH=\$PATH:\$HOME/go/bin" >> "$HOME/.bashrc"
 
-source "$HOME/.bashrc"
+echo "Installing packages"
+echo "Sponge"
+apt-get install -y moreutils gettext
