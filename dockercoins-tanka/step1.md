@@ -1,3 +1,7 @@
+## Wait ...
+
+For the long init script wait for the message `ready to go !!!`
+
 ## Parameters to set
 
 - kubernetes api address

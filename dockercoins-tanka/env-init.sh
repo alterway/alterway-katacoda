@@ -30,3 +30,5 @@ echo "Installing packages"
 echo "Sponge"
 #apt-get  autoremove -qy || echo "OK"
 apt-get install -qy moreutils gettext || echo "Done"
+
+echo "ready to go !!!"
