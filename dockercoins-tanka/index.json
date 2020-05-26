@@ -20,12 +20,21 @@
     ],
     "intro": {
       "text": "intro.md",
-      "courseData": "background.sh",
-      "code": "foreground.sh"
+      "code": "set-env.sh"
     },
     "finish": {
       "text": "finish.md"
     }
+  },
+  "assets": {
+    "client": [
+      { "file": "lib/config.libsonnet.tpl", "target": "~/templates" },
+      { "file": "lib/project.libsonnet.tpl", "target": "~/templates" },
+      { "file": "default/main.jsonnet.tpl", "target": "~/templates/default" },
+      { "file": "dev/main.jsonnet.tpl", "target": "~/templates/dev" },
+      { "file": "qa/main.jsonnet.tpl", "target": "~/templates/qa" },
+      { "file": "prod/main.jsonnet.tpl", "target": "~/templates/prod" }
+    ]
   },
   "environment": {
     "uilayout": "editor-terminal"
