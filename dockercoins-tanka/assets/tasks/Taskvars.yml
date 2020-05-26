@@ -1,5 +1,5 @@
 project_name: "dockercoins"
 namespace: "dockercoins"
-apiServer: "https://akshelaw-78c8fea0.hcp.northeurope.azmk8s.io:443"
-apiServerQa: "https://akshelaw-78c8fea0.hcp.northeurope.azmk8s.io:443"
-apiServerProd: "https://akshelaw-78c8fea0.hcp.northeurope.azmk8s.io:443"
+apiServer: "https://172.17.0.31:6443"
+apiServerQa: "https://172.17.0.31:6443"
+apiServerProd: "https://172.17.0.31:6443"

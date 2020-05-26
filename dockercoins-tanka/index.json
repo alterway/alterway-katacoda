@@ -6,16 +6,12 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Edit parameters for the demo",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Run the demo",
         "text": "step2.md"
-      },
-      {
-        "title": "Step 3",
-        "text": "step3.md"
       }
     ],
     "intro": {
@@ -28,6 +24,7 @@
     "assets": {
       "host01": [
         { "file": "lib/config.libsonnet.tpl", "target": "~/templates" },
+        { "file": "lib/jsonnetfile.json", "target": "~/temlates" },
         { "file": "lib/project.libsonnet.tpl", "target": "~/templates" },
         { "file": "default/main.jsonnet.tpl", "target": "~/templates/default" },
         { "file": "dev/main.jsonnet.tpl", "target": "~/templates/dev" },

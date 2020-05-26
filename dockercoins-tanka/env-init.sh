@@ -1,6 +1,7 @@
 #!/bin/bash -x
 
 echo "export PATH=\$PATH:\$HOME/go/bin" >> "$HOME/.bashrc"
+echo "export PATH=\$PATH:\$HOME/bin" >> "$HOME/.bashrc"
 
 source "$HOME/.bashrc"
 
@@ -15,7 +16,10 @@ echo "tasks"
 curl -sL https://taskfile.dev/install.sh -o install.sh
 bash install.sh
 
-echo "tanka"
+echo "jb"
+GO111MODULE="on" go get github.com/jsonnet-bundler/jsonnet-bundler/cmd/jb
+
+echo "Tanka"
 curl -Ls -o "$HOME/go/bin/tk" https://github.com/grafana/tanka/releases/download/v0.10.0/tk-linux-amd64
 chmod a+rx "$HOME/go/bin/tk"
 
