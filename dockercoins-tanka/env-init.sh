@@ -25,4 +25,4 @@ pip install jsonnet
 echo "Installing packages"
 echo "Sponge"
 #apt-get  autoremove -qy || echo "OK"
-#apt-get install -qy moreutils gettext || echo "OK"
+apt-get install -qy moreutils gettext || echo "Done"
