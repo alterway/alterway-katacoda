@@ -4,6 +4,11 @@ echo "export PATH=\$PATH:\$HOME/go/bin" >> "$HOME/.bashrc"
 
 source "$HOME/.bashrc"
 
+mkdir -p ~/templates/default
+mkdir -p ~/templates/dev
+mkdir -p ~/templates/qa
+mkdir -p ~/templates/prod
+
 #echo "Waiting to complete"; while [ ! -f /opt/.backgroundfinished ] ; do sleep 2; done; echo "Done"
 
 echo "tasks"
@@ -17,8 +22,7 @@ chmod a+rx "$HOME/go/bin/tk"
 echo "jsonnet"
 pip install jsonnet
 
-
 echo "Installing packages"
 echo "Sponge"
-apt-get  autoremove -y || echo "OK"
-apt-get install -y moreutils gettext || echo "OK"
+#apt-get  autoremove -qy || echo "OK"
+#apt-get install -qy moreutils gettext || echo "OK"
