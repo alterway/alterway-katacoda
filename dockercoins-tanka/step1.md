@@ -4,10 +4,14 @@
 
 Run the following command to get the kubernetes api address
 
-`kubectl cluster-info`
+`kubectl cluster-info`{{execute}}
 
 ### Edit Taskvars.yml
 
-`vi Taskvars.yml`
+`vi Taskvars.yml`{{execute}}
+
+or if you can't vi ;)
+
+`nano Taskvars.yml`{{execute}}
 
 - project name must not contains white `space` or `$`
