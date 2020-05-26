@@ -1,12 +1,10 @@
-#!/bin/bash
-
-set -o pipefail
+#!/bin/bash -x
 
 #echo "Waiting to complete"; while [ ! -f /opt/.backgroundfinished ] ; do sleep 2; done; echo "Done"
 
 echo "Installing packages"
 echo "Sponge"
-apt install -y moreutils gettext
+apt-get install -y moreutils gettext
 
 echo "tasks"
 curl -sL https://taskfile.dev/install.sh -o install.sh
