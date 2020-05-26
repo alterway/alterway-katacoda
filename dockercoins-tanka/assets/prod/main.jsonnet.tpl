@@ -4,7 +4,7 @@
   // NameSpace
   _config+:{
     ${PROJECT_NAME}+: {
-        namespace: "${PROJECT_NAME}-prod"
+        namespace: "${PROJECT_NAME}"
     }
   },
   // Patching #number of replicas and namespace

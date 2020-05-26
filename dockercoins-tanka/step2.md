@@ -2,17 +2,21 @@
 
 - `task all`{{execute}} will deploy dev environment after a cleanup
 
-- `ENV=qa task deploy`{{execute}} will deploy QA environment
-
-- `ENV=prod task deploy`{{execute}} will deploy PROD environment
-
 ## Check the deployment
 
 `kubectl get all -n dockercoins`{{execute}}
 
 ## Acecss to the webui
 
-https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/
+copy paste the output in a browser
+
+`echo [[HOST_SUBDOMAIN]]-$(kubectl get -o jsonpath="{.spec.ports[0].nodePort}" services webui -n dockercoins)-[[KATACODA_HOST]].environments.katacoda.com`
+
+## test other environments
+
+- `ENV=qa task deploy`{{execute}} will deploy QA environment
+
+- `ENV=prod task deploy`{{execute}} will deploy PROD environment
 
 ## Cleanup
 

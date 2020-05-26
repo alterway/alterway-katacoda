@@ -1,12 +1,12 @@
 ## Parameters to set
 
-### kubernetes api address
+- kubernetes api address
 
 Run the following command to get the kubernetes api address
 
 `kubectl cluster-info`{{execute}}
 
-### Edit Taskvars.yml
+- Edit Taskvars.yml
 
 `vi Taskvars.yml`{{execute}}
 
