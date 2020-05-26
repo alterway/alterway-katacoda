@@ -2,11 +2,11 @@
 
 set -o pipefail
 
-echo "Waiting to complete"; while [ ! -f /opt/.backgroundfinished ] ; do sleep 2; done; echo "Done"
+#echo "Waiting to complete"; while [ ! -f /opt/.backgroundfinished ] ; do sleep 2; done; echo "Done"
 
 echo "Installing packages"
 echo "Sponge"
-apt install -y moreutils
+apt install -y moreutils gettext
 echo "tasks"
 curl -sL https://taskfile.dev/install.sh | sh
 echo "tanka"
