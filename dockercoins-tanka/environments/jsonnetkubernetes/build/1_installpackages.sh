@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 echo "tasks"
 curl -sL https://taskfile.dev/install.sh -o install.sh

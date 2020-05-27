@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 echo "export PATH=\$PATH:\$HOME/go/bin" >> "$HOME/.bashrc"
 echo "export PATH=\$PATH:\$HOME/bin" >> "$HOME/.bashrc"
