@@ -9,6 +9,7 @@ mv task "$HOME/go/bin/task"
 chmod a+rx "$HOME/go/bin/task"
 rm -rf "/tmp/task"
 
+cd -
 
 echo "jb"
 GO111MODULE="on" go get github.com/jsonnet-bundler/jsonnet-bundler/cmd/jb
