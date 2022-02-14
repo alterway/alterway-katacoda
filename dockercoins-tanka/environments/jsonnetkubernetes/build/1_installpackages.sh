@@ -1,8 +1,14 @@
 #!/bin/bash
 
 echo "tasks"
-curl -sL https://taskfile.dev/install.sh -o install.sh
-bash install.sh
+mkdir /tmp/task
+curl -Ls -o "/tmp/task/task_linux_amd64.tar.gz" https://github.com/go-task/task/releases/download/v3.10.0/task_linux_amd64.tar.gz
+cd "/tmp/task" || echo "fail to cd"
+tar -xzf task_linux_amd64.tar.gz
+mv task "$HOME/go/bin/task"
+chmod a+rx "$HOME/go/bin/task"
+rm -rf "/tmp/task"
+
 
 echo "jb"
 GO111MODULE="on" go get github.com/jsonnet-bundler/jsonnet-bundler/cmd/jb
